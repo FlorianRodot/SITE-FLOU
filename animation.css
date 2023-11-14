@@ -1,0 +1,66 @@
+@keyframes BounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes scalePointer {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(5);
+  }
+}
+
+@keyframes appearFromRight {
+  from {
+    transform: translateX(-2000px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes appearFromTop {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.appearFromRight {
+  animation-name: appearFromRight;
+  animation-duration: 1s;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.appearFromTop {
+  animation-name: appearFromTop;
+  animation-duration: 1s;
+}

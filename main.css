@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(Fonts/Roboto-Regular.woff) format(woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(Fonts/Roboto-Bold.woff) format(woff);
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(Fonts/Roboto-Light.woff) format(woff);
+  font-style: light;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(229, 229, 229);
+}
+
+p {
+  font-family: "Roboto Light";
+  line-height: 2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Roboto";
+  color: rgb(229, 229, 229);
+  overflow-x: hidden;
+  background-color: rgb(29, 29, 29);
+}
+
+section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.Socials {
+  position: fixed;
+  margin-top: 50vh;
+  width: fit-content;
+  right: -4vw;
+}
+
+.Socials a img {
+  width: 25px;
+}
+
+.navhome {
+  display: flex;
+  justify-content: end;
+}
+
+.navitems {
+  margin-left: 4vw;
+  font-family: "Roboto light";
+  font-size: 1.5vw;
+}
+
+.navitems:hover a {
+  transition: 0.3s;
+  color: rgb(244, 151, 54);
+}
+
+.colortest {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.colortest a {
+  color: rgb(244, 151, 54);
+  border-bottom: rgb(244, 151, 54) solid 1px;
+}
+
+.headerFixed {
+  width: 95vw;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 3;
+  gap: 10px;
+  /*background-color: rgba(0, 30, 30, 0.31);*/
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  padding-left: 5vw;
+  padding-top: 20px;
+  animation-name: appearFromTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  z-index: 999;
+}
+
+.one {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logoHeader {
+  width: 100px;
+}
+
+.logoHeader:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column: 2;
+  top: 50%;
+}
+
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  grid-column: 3;
+  padding-right: 5vw;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.columnOne {
+  grid-column: 1;
+}
+.columnTwo {
+  grid-column: 2;
+}
+
+#buttonLearn {
+  position: absolute;
+}
+
+.title1 {
+  grid-column: 1;
+  width: fit-content;
+  font-family: "Roboto Bold";
+  font-size: 4vw;
+  line-height: 100%;
+  padding-bottom: 20px;
+}
+
+.title2 {
+  width: fit-content;
+  font-family: "Roboto Bold";
+  font-size: 4vw;
+  line-height: 100%;
+}
+
+.btn1 {
+  background-color: rgb(229, 229, 229);
+  border: 0;
+  padding: 10px;
+  width: fit-content;
+  font-family: "Roboto Light";
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 6px;
+  border-radius: 10px;
+  font-size: 100%;
+  box-shadow: -6px 5px rgb(87, 55, 20);
+
+  animation-name: BounceInRight;
+  animation-duration: 1s;
+}
+
+.btn1:hover {
+  background-color: rgb(244, 151, 54);
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: whitesmoke;
+}
+
+.visionContainer {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-template-rows: repeat(2, auto);
+}
+
+.visionOne {
+  grid-column: 1;
+  grid-row: 1/3;
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: justify;
+  line-height: 2rem;
+  padding-right: 25px;
+}
+
+.visionTwo {
+  grid-column: 2;
+  grid-row: 1;
+  border-left: solid 0.5px rgb(137, 129, 129);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.visionThree {
+  grid-column: 3;
+  grid-row: 1;
+  border-left: solid 0.5px rgb(137, 129, 129);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.visionFour {
+  grid-column: 2;
+  grid-row: 2;
+  border-left: solid 0.5px rgb(137, 129, 129);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.visionFive {
+  grid-column: 3;
+  grid-row: 2;
+  border-left: solid 0.5px rgb(137, 129, 129);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.counterContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.col1 {
+  grid-column: 1;
+}
+.col2 {
+  grid-column: 2;
+}
+.row1 {
+  grid-row: 1;
+}
+.row2 {
+  grid-row: 2;
+}
+
+.alignBottom {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.alignTop {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.redDot {
+  margin-top: 8px;
+  margin-left: 2px;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgb(131, 12, 12);
+}
